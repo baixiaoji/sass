@@ -1,0 +1,20 @@
+// @import 'scss:color';
+// @import 'scss:map';
+
+$fonts: (
+  "Helvetica": (
+    "weights": (
+      "regular": 400,
+      "medium": 500,
+      "bold": 700
+    )
+  )
+);
+
+.button {
+    $primary-color: #6b717f;
+    color: $primary-color;
+    // border: 1px solid scale($primary-color, $lightness: 20%);
+    font-family: deep-remove($fonts, "Helvetica", "weights", "regular");;
+}
+
